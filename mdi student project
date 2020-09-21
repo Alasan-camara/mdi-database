@@ -1,0 +1,47 @@
+- create table lecturer(Lec_code int not null AUTO_INCREMENT, Lec_Fname varchar(40) not null, Lec_Lname varchar(40) not null, Lec_Address varchar(40) not null, Lec_Phone int(13) not null, Lec_Age smallint(4) not null, Lec_Email varchar(40), primary key(Lec_code));
+
+-- /* done creating table of Lecturer */
+
+-- insert into lecturer values( , "Alhassan", "Gibba","Bundung",3578563, 55,"gibba@yahoo.com");
+
+-- starting of department table
+-- create table department(Dep_code int not null AUTO_INCREMENT, Dep_Name varchar(40) not null,  Dep_Head varchar(20) not null, primary key(Dep_code));
+
+-- insert into department values(1 , "IT", "Jarju");
+
+-- create table staff(Staff_code int not null AUTO_INCREMENT, Staff_Fname varchar(40) not null, Staff_Lname varchar(40) not null, Staff_Address varchar(40) not null, Staff_Phone int(13) not null, Staff_DOB date not null, Dep_code int, primary key(Staff_code));
+
+--  insert into Staff values(1 , "Alan", "Gibba","Bundung",4578563, 1994-07-22, 1);
+
+-- create table course(Course_code int not null AUTO_INCREMENT, Course_Name varchar(20) not null,Course_Requirement varchar(10) not null,Dep_code int not null,Semester_code int not null, primary key(Course_code) );
+
+-- insert into course values(1, "Computer_Science","Six_Credit",1,3);
+
+-- create table semester(Semester_code int not null AUTO_INCREMENT, Semester_Start_Date Date not null,Semester_End_Date Date not null,Course_code int not null, primary key(Semester_code) );
+
+-- insert into semester values(1, "2019-01-01","2020-12-31",1,3);
+
+-- create table student(Student_code int not null AUTO_INCREMENT, Student_Fname varchar(40) not null, Student_Lname varchar(40) not null, Student_Address varchar(40) not null,Student_DOB date not null, Student_Phone int(13) not null,Student_Email varchar(20), Student_Class_code int not null, primary key(Student_code));
+
+-- insert into student values(1 , "Mustapha", "Dibassy","Banjul","1999-03-15",7378990,"mdibassy@yahoo.com",2);
+
+-- create table enrollment(enroll_code int not null AUTO_INCREMENT,Student_code varchar(4) not null, Class_code int not null,primary key(Enroll_code));
+
+
+-- insert into enrollment values(1,2,1);
+
+--  create table class(Class_code int not null AUTO_INCREMENT,Class_Start_Time varchar(6) not null, Class_Stop_Time varchar(6) not null, primary key(Class_code));
+
+--  insert into class values(2,"08:00","12:00");
+
+--  create table room(Room_code int not null AUTO_INCREMENT,Room_Name varchar(20) not null, Building_Code int not null, primary key(Room_code));
+
+--  insert into room values(1,"Kj17",2);
+
+-- create table building(Building_code int not null AUTO_INCREMENT,Building_Name varchar(20) not null, primary key(Building_code));
+
+-- insert into building values(1,"Kajukla",2);
+
+
+
+
